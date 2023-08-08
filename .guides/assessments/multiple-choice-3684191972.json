@@ -1,0 +1,72 @@
+{
+	"type": "multiple-choice",
+	"taskId": "multiple-choice-3684191972",
+	"source": {
+		"name": "rb in python",
+		"showName": false,
+		"instructions": "**In `image=open(img, \"rb\")`, what does `rb` stand for?**",
+		"multipleResponse": false,
+		"isRandomized": false,
+		"answers": [
+			{
+				"_id": "2f8d036f-fcdf-156b-b1f6-29fd42148e0a",
+				"correct": false,
+				"answer": "Read boolean"
+			},
+			{
+				"_id": "3d8cf1af-b7fc-8a42-20db-bd0195b44dbe",
+				"correct": true,
+				"answer": "Read binary"
+			},
+			{
+				"_id": "08629249-4ba4-0644-5880-da389b0265ec",
+				"correct": false,
+				"answer": "Read bytes"
+			},
+			{
+				"_id": "9918fb6a-2e9d-1dcc-ae07-1a348d3f258e",
+				"correct": false,
+				"answer": "Read bits"
+			}
+		],
+		"guidance": "In Python, the `rb` mode stands for \"read binary\". This mode is used when the data to be read from a file is binary, not text, such as images or video files.",
+		"showGuidanceAfterResponseOption": {
+			"type": "Attempts",
+			"passedFrom": 2
+		},
+		"maxAttemptsCount": 0,
+		"showExpectedAnswer": true,
+		"points": 20,
+		"incorrectPoints": 0,
+		"arePartialPointsAllowed": false,
+		"metadata": {
+			"tags": [
+				{
+					"name": "Assessment Type",
+					"value": "Multiple Choice"
+				}
+			],
+			"files": [
+				"main.py"
+			],
+			"opened": [
+				{
+					"type": "file",
+					"content": "main.py"
+				},
+				{
+					"type": "terminal",
+					"panelNumber": 1,
+					"content": "clear"
+				},
+				{
+					"type": "terminal",
+					"panelNumber": 1,
+					"content": ""
+				}
+			]
+		},
+		"bloomsObjectiveLevel": "",
+		"learningObjectives": ""
+	}
+}

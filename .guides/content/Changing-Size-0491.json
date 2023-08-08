@@ -1,0 +1,26 @@
+{
+	"id": "0491e0ac-51b8-5fb7-df04-2a20c112ece0",
+	"title": "Changing Size",
+	"files": [
+		{
+			"path": "#tabs",
+			"action": "close"
+		},
+		{
+			"path": "main.py",
+			"action": "open"
+		},
+		{
+			"path": "#terminal: ",
+			"panel": 1,
+			"action": "open"
+		}
+	],
+	"path": [],
+	"type": "page",
+	"contentType": "markdown",
+	"teacherOnly": false,
+	"closeTerminalSession": true,
+	"learningObjectives": "",
+	"layout": "3-cell"
+}

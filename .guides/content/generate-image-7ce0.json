@@ -1,0 +1,26 @@
+{
+	"id": "7ce00632-c5fd-a674-7f01-af41c6ba974e",
+	"title": "generate_image",
+	"files": [
+		{
+			"path": "#tabs",
+			"action": "close"
+		},
+		{
+			"path": "#terminal: clear",
+			"panel": 1,
+			"action": "open"
+		},
+		{
+			"path": "main.py",
+			"action": "open"
+		}
+	],
+	"path": [],
+	"type": "page",
+	"contentType": "markdown",
+	"teacherOnly": false,
+	"closeTerminalSession": true,
+	"learningObjectives": "",
+	"layout": "3-cell"
+}

@@ -1,0 +1,71 @@
+{
+	"type": "multiple-choice",
+	"taskId": "multiple-choice-2565980586",
+	"source": {
+		"name": "Function Comprehension",
+		"showName": false,
+		"instructions": "**What is the purpose of the `main` function in the code?**",
+		"multipleResponse": false,
+		"isRandomized": false,
+		"answers": [
+			{
+				"_id": "1cc3e546-5c83-f79e-c76b-5ba1ee450518",
+				"correct": false,
+				"answer": "To interact with DALL-E and PIL directly"
+			},
+			{
+				"_id": "e6195ef0-7b29-1f19-82e9-078c27ebe047",
+				"correct": true,
+				"answer": "To provide an interface for the user to interact with the program"
+			},
+			{
+				"_id": "eb6bcbcc-e7f0-309b-413e-112530448e28",
+				"correct": false,
+				"answer": "To generate images with DALL-E"
+			},
+			{
+				"_id": "315eb246-1a1e-d273-5dc0-88b9c4dd9cc4",
+				"correct": false,
+				"answer": "To manipulate images with PIL"
+			}
+		],
+		"guidance": "The `main` function serves as a control center for the program. It runs a loop that prompts the user to choose an action (generating an image with DALL-E or creating variations of an image with PIL), gets necessary inputs from the user for each option, and calls the appropriate function.",
+		"showGuidanceAfterResponseOption": {
+			"type": "Attempts",
+			"passedFrom": 2
+		},
+		"maxAttemptsCount": 0,
+		"showExpectedAnswer": true,
+		"points": 20,
+		"incorrectPoints": 0,
+		"arePartialPointsAllowed": false,
+		"metadata": {
+			"tags": [
+				{
+					"name": "Assessment Type",
+					"value": "Multiple Choice"
+				}
+			],
+			"files": [
+				"main.py"
+			],
+			"opened": [
+				{
+					"type": "file",
+					"content": "main.py"
+				},
+				{
+					"type": "terminal",
+					"content": ""
+				},
+				{
+					"type": "terminal",
+					"panelNumber": 1,
+					"content": ""
+				}
+			]
+		},
+		"bloomsObjectiveLevel": "",
+		"learningObjectives": ""
+	}
+}

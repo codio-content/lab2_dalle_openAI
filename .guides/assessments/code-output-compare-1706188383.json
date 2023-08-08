@@ -1,0 +1,60 @@
+{
+	"type": "code-output-compare",
+	"taskId": "code-output-compare-1706188383",
+	"source": {
+		"name": "Code Comprehension",
+		"showName": false,
+		"instructions": "Please click the button below when ready to submit your code.",
+		"command": "python .guides/secure/test.py",
+		"preExecuteCommand": "",
+		"options": {
+			"timeout": 30,
+			"ignoreCase": true,
+			"ignoreWhitespaces": true,
+			"ignoreNewline": true,
+			"matchSubstring": false
+		},
+		"guidance": "Here is a solution. This solution includes choosing the gaussian blur radius.\n```python\n# libraries\nimport os\nimport openai\nfrom PIL import Image,ImageOps,ImageFilter\nfrom io import BytesIO\nimport requests\n\n# Set API key and prompt\nopenai.api_key = os.getenv('OPENAI_KEY')\n\n\ndef main():\n    while True:\n        print(\"\\n1. Generate an image with DALL-E\")\n        print(\"2. Create variations of an image\")\n        print(\"3. Resize an image\")\n        print(\"4. Add a filter to your image\")\n        #print(\"5. view current directory\")\n        print(\"0. Exit\")\n        \n        option = input(\"Choose an option: \")\n\n        if option == \"1\":\n            prompt = input(\"Enter the prompt for DALL-E: \")\n            # Generate the image with DALL-E\n            generate_image(prompt)\n        elif option == \"2\":\n            image_path = input(\"Enter the path of the image: \")\n            # Open the image file\n            create_variations(image_path)\n        elif option==\"3\":\n          image_path = input(\"Enter the path of the image you want resized: \")\n          # run resize function\n          re_size(image_path)\n        elif option==\"4\":\n          image_path = input(\"Enter the path of the image you want to add filter to: \")\n          # run filter function\n          filters(image_path)\n        elif option==\"5\":\n          # run files list function\n          fileList()\n            \n        elif option == \"0\":\n            print(\"Exiting the program...\")\n            break\n        else:\n            print(\"Invalid option. Please enter a valid number.\")\n\ndef generate_image(prompt1):\n    # Generate the image with DALL-E\n    print(f\"Generating an image for the prompt: {prompt1}\")\n    # Call DALL-E API here\n    response = openai.Image.create(\n    prompt=prompt1,\n    n=1,\n    size=\"256x256\")\n    image_url = response['data'][0]['url']\n    img_data = requests.get(image_url).content\n    with open('image_created.png', 'wb') as handler:\n      handler.write(img_data)\n    print(\"Your image was generated under the `image_created.png` file name.\")\n\ndef create_variations(img):\n    # Create variations of an image using PIL\n    print(\"Creating variations of the image...\")\n    # Call DALL-E API here\n    response = openai.Image.create_variation(\n    image=open(img, \"rb\"),\n    n=1,\n    size=\"256x256\")\n    image_url = response['data'][0]['url']\n    img_data = requests.get(image_url).content\n    with open('image_var.png', 'wb') as handler:\n      handler.write(img_data)\n    print(\"Your image was generated under the `image_var.png` file name.\")\n\ndef re_size(image_path):\n## Open an image file\n  with Image.open(image_path) as img:\n      # Ask the user to choose a dimension\n      print(\"Choose a dimension for resizing the image:\")\n      print(\"1. 256x256\")\n      print(\"2. 512x512\")\n      print(\"3. 1024x1024\")\n      option = input(\"Enter your option: \")\n\n      if option == \"1\":\n          target_size = (256, 256)\n      elif option == \"2\":\n          target_size = (512, 512)\n      elif option == \"3\":\n          target_size = (1024, 1024)\n      else:\n          print(\"Invalid option. Using default size 256x256.\")\n          target_size = (256, 256)\n\n      # Resize the image\n      resized_img = img.resize(target_size)\n\n      # Save the resized image\n      resized_img.save('resized_image.png')\n      print(\"Your given image was resized and saved under `resized_image.png` \")\n\ndef filters(image_path):\n    # Open an image file\n    with Image.open(image_path) as img:\n        # Ask the user to choose a filter\n        print(\"Choose a filter to apply on the image:\")\n        print(\"1. Contour\")\n        print(\"2. Edge Enhance\")\n        print(\"3. Find Edges\")\n        print(\"4. Gaussian Blur\")\n        option = input(\"Enter your option: \")\n\n        if option == \"1\":\n            filtered_img = img.filter(ImageFilter.CONTOUR)\n        elif option == \"2\":\n            filtered_img = img.filter(ImageFilter.EDGE_ENHANCE)\n        elif option == \"3\":\n            filtered_img = img.filter(ImageFilter.FIND_EDGES)\n        elif option == \"4\":\n            # Apply Gaussian blur\n            blur_radius = input(\"Enter the radius for the Gaussian blur: \")\n            try:\n                blur_radius = int(blur_radius)\n            except ValueError:\n                print(\"Invalid radius. Applying Gaussian blur with default radius 5.\")\n                blur_radius = 5\n            filtered_img = img.filter(ImageFilter.GaussianBlur(radius=blur_radius))\n        else:\n            print(\"Invalid option. Applying Contour filter by default.\")\n            filtered_img = img.filter(ImageFilter.CONTOUR)\n        \n        # Save the filtered image\n        filtered_img.save('filtered_image.png')\n        print(\"Filter applied successfully, 'filtered_image.png' created.\")\n\ndef fileList():\n    # Get the current directory\n  current_directory = os.getcwd()\n  # Get all files in the current directory\n  files = os.listdir(current_directory)\n  # Print all files (not directories)\n  print(\"The current files in your directory: \")\n  for file in files:\n      if os.path.isfile(file):\n          print(file)\n\n\n\nif __name__ == \"__main__\":\n    main()\n\n\n```",
+		"showGuidanceAfterResponseOption": {
+			"type": "Attempts",
+			"passedFrom": 2
+		},
+		"maxAttemptsCount": 0,
+		"points": 20,
+		"showExpectedAnswer": true,
+		"arePartialPointsAllowed": false,
+		"sequence": [
+			{
+				"arguments": "",
+				"input": "0",
+				"output": "1. Generate an image with DALL-E\n2. Create variations of an image\n3. Resize an image\n4. Add a filter to your image\n0. Exit\nChoose an option: Exiting the program...\nRunning /home/codio/workspace/main.py...\n/home/codio/workspace/main.py ran successfully.\nresized_image.png exists.\nresized_image.png is not empty.\nfiltered_image.png exists.\nfiltered_image.png is not empty.\nimage_var.png exists.\nimage_var.png is not empty.\nimage_created.png exists.\nimage_created.png is not empty.\n",
+				"showFeedback": false,
+				"feedback": ""
+			}
+		],
+		"metadata": {
+			"tags": [
+				{
+					"name": "Assessment Type",
+					"value": "Standard Code Test"
+				}
+			],
+			"files": [
+				"main.py"
+			],
+			"opened": [
+				{
+					"type": "file",
+					"content": "main.py"
+				},
+				{
+					"type": "terminal",
+					"panelNumber": 1,
+					"content": ""
+				}
+			]
+		},
+		"bloomsObjectiveLevel": "",
+		"learningObjectives": ""
+	}
+}

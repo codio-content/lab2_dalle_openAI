@@ -1,0 +1,22 @@
+{
+	"id": "a088d428-9246-6382-fe2c-114a0e0f17a0",
+	"title": "Variation",
+	"files": [
+		{
+			"path": "main.py",
+			"action": "open"
+		},
+		{
+			"path": "#terminal: ",
+			"panel": 1,
+			"action": "open"
+		}
+	],
+	"path": [],
+	"type": "page",
+	"contentType": "markdown",
+	"teacherOnly": false,
+	"closeTerminalSession": true,
+	"learningObjectives": "",
+	"layout": "3-cell"
+}

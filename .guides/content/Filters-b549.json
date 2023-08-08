@@ -1,0 +1,26 @@
+{
+	"id": "b5496e0b-f2e0-f2ce-e5c9-73c4fab9abcd",
+	"title": "Filters",
+	"files": [
+		{
+			"path": "#tabs",
+			"action": "close"
+		},
+		{
+			"path": "main.py",
+			"action": "open"
+		},
+		{
+			"path": "#terminal: ",
+			"panel": 1,
+			"action": "open"
+		}
+	],
+	"path": [],
+	"type": "page",
+	"contentType": "markdown",
+	"teacherOnly": false,
+	"closeTerminalSession": true,
+	"learningObjectives": "",
+	"layout": "3-cell"
+}

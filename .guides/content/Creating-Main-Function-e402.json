@@ -1,0 +1,22 @@
+{
+	"id": "e40297b5-65bb-67ba-c675-f6b132e2a79e",
+	"title": "Creating Main Function",
+	"files": [
+		{
+			"path": "main.py",
+			"action": "open"
+		},
+		{
+			"path": "#terminal: ",
+			"panel": 1,
+			"action": "open"
+		}
+	],
+	"path": [],
+	"type": "page",
+	"contentType": "markdown",
+	"teacherOnly": false,
+	"closeTerminalSession": true,
+	"learningObjectives": "",
+	"layout": "3-cell"
+}

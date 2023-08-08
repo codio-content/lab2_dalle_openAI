@@ -1,0 +1,26 @@
+{
+	"title": "Dall-E Lab",
+	"theme": "light",
+	"scripts": [],
+	"lexikonTopic": "",
+	"suppressPageNumbering": true,
+	"useSubmitButtons": true,
+	"useMarkAsComplete": true,
+	"hideMenu": false,
+	"allowGuideClose": false,
+	"collapsedOnStart": false,
+	"hideSectionsToggle": false,
+	"hideBackToDashboard": false,
+	"protectLayout": false,
+	"order": [
+		"Learning-Objectives-c919",
+		"GitHub-4bba",
+		"Creating-Main-Function-e402",
+		"generate-image-7ce0",
+		"Variation-a088",
+		"Changing-Size-0491",
+		"Filters-b549",
+		"Coding-Exercise-e1f9",
+		"GitHub-Push-7db0"
+	]
+}

@@ -1,0 +1,17 @@
+{
+	"id": "4bba6795-2a6c-f8b5-775c-520a30a13648",
+	"title": "GitHub",
+	"files": [
+		{
+			"path": "#terminal: ",
+			"action": "open"
+		}
+	],
+	"path": [],
+	"type": "page",
+	"contentType": "markdown",
+	"teacherOnly": false,
+	"closeTerminalSession": true,
+	"learningObjectives": "",
+	"layout": "2-panels-tree"
+}

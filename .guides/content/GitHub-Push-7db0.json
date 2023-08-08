@@ -1,0 +1,21 @@
+{
+	"id": "7db0131a-5dda-9a97-a1f3-4a8b2a0ea871",
+	"title": "GitHub Push",
+	"files": [
+		{
+			"path": "#tabs",
+			"action": "close"
+		},
+		{
+			"path": "#terminal: ",
+			"action": "open"
+		}
+	],
+	"path": [],
+	"type": "page",
+	"contentType": "markdown",
+	"teacherOnly": false,
+	"closeTerminalSession": true,
+	"learningObjectives": "",
+	"layout": "2-panels-tree"
+}

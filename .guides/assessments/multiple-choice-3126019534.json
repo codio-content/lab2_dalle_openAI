@@ -1,0 +1,62 @@
+{
+	"type": "multiple-choice",
+	"taskId": "multiple-choice-3126019534",
+	"source": {
+		"name": "Image generation",
+		"showName": false,
+		"instructions": "What would happen if we generated an image with 300x300?",
+		"multipleResponse": false,
+		"isRandomized": false,
+		"answers": [
+			{
+				"_id": "20188963-afb8-fe01-7416-bb5d4dca2c09",
+				"correct": false,
+				"answer": "Generate a larger image"
+			},
+			{
+				"_id": "684dfe41-14d0-ce48-c893-abef49914ca3",
+				"correct": false,
+				"answer": "Generate an image with a better resolution"
+			},
+			{
+				"_id": "bdb0efeb-84a0-8b62-5e52-5f174a66b019",
+				"correct": true,
+				"answer": "Generate an error"
+			}
+		],
+		"guidance": "Anything aside from 256x256,512x512,1024x1024 will generate an error when using our API call.  ",
+		"showGuidanceAfterResponseOption": {
+			"type": "Attempts",
+			"passedFrom": 2
+		},
+		"maxAttemptsCount": 0,
+		"showExpectedAnswer": true,
+		"points": 20,
+		"incorrectPoints": 0,
+		"arePartialPointsAllowed": false,
+		"metadata": {
+			"tags": [
+				{
+					"name": "Assessment Type",
+					"value": "Multiple Choice"
+				}
+			],
+			"files": [
+				"main.py"
+			],
+			"opened": [
+				{
+					"type": "file",
+					"content": "main.py"
+				},
+				{
+					"type": "terminal",
+					"panelNumber": 1,
+					"content": "clear"
+				}
+			]
+		},
+		"bloomsObjectiveLevel": "",
+		"learningObjectives": ""
+	}
+}

@@ -1,0 +1,22 @@
+{
+	"id": "e1f9311f-cff4-4d82-54de-aeb6e0a7b104",
+	"title": "Coding Exercise",
+	"files": [
+		{
+			"path": "main.py",
+			"action": "open"
+		},
+		{
+			"path": "#terminal: ",
+			"panel": 1,
+			"action": "open"
+		}
+	],
+	"path": [],
+	"type": "page",
+	"contentType": "markdown",
+	"teacherOnly": false,
+	"closeTerminalSession": true,
+	"learningObjectives": "",
+	"layout": "3-cell"
+}

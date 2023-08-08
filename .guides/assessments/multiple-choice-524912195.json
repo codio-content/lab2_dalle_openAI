@@ -1,0 +1,57 @@
+{
+	"type": "multiple-choice",
+	"taskId": "multiple-choice-524912195",
+	"source": {
+		"name": "Page Comprehension",
+		"showName": false,
+		"instructions": "**The `re_size` function prompts the user for the desired size of the image and defaults to 256x256 if an invalid option is entered.**",
+		"multipleResponse": false,
+		"isRandomized": false,
+		"answers": [
+			{
+				"_id": "74d85f43-d0ef-e634-c485-94e868a441e0",
+				"correct": true,
+				"answer": "True"
+			},
+			{
+				"_id": "a668743a-e5cd-e60a-9a50-e806d6d5550c",
+				"correct": false,
+				"answer": "False"
+			}
+		],
+		"guidance": "The `re_size` function does indeed ask the user to select a dimension for resizing the image. If the user's choice is not among the three valid options (1, 2, or 3), the function defaults to a size of 256x256.",
+		"showGuidanceAfterResponseOption": {
+			"type": "Attempts",
+			"passedFrom": 2
+		},
+		"maxAttemptsCount": 0,
+		"showExpectedAnswer": true,
+		"points": 20,
+		"incorrectPoints": 0,
+		"arePartialPointsAllowed": false,
+		"metadata": {
+			"tags": [
+				{
+					"name": "Assessment Type",
+					"value": "Multiple Choice"
+				}
+			],
+			"files": [
+				"main.py"
+			],
+			"opened": [
+				{
+					"type": "file",
+					"content": "main.py"
+				},
+				{
+					"type": "terminal",
+					"panelNumber": 1,
+					"content": ""
+				}
+			]
+		},
+		"bloomsObjectiveLevel": "",
+		"learningObjectives": ""
+	}
+}
